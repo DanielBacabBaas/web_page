@@ -140,62 +140,63 @@ class _Section1State extends State<Section3> {
                             section: 2,
                             index: 1,
                             expandableProvider: widget.expandableProvider,
-                            childWidget: Column(
+                            childWidget: Row(
                               crossAxisAlignment: CrossAxisAlignment.center,
+                              mainAxisAlignment: MainAxisAlignment.center,
                               children: [
                                 Image.network(
                                    height: isMobileVertical?widget.screenHeight*.2:widget.screenHeight*.6,
                                     fit: BoxFit.contain,
                                     "https://i.imgur.com/P0uxGY8.png"),
-                                InkWell(
-                                  onTap: () {
-                                    _openURL(
-                                        "https://github.com/ArgenisGonzalez-Ksquare/project2_conway");
-                                  },
-                                  child: Row(
-                                    mainAxisAlignment: MainAxisAlignment.center,
-                                    children: [
-                                      Icon(Icons.remove_red_eye_outlined,
-                                          size: widget.screenHeight * .08,
-                                          color: const Color(0xff61f7d5)),
-                                      RichText(
-                                        text: TextSpan(
-                                          text:
-                                              'Click here to\nsee the repository',
-                                          style: TextStyle(
-                                              color: Colors.white,
-                                              decoration:
-                                                  TextDecoration.underline,
-                                              fontSize: widget.text),
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                ),
-                                InkWell(
-                                  onTap: () {
-                                    _openURL(
-                                        "https://argenisgonzalez-ksquare.github.io/project2_conway/");
-                                  },
-                                  child: Row(
-                                    mainAxisAlignment: MainAxisAlignment.center,
-                                    children: [
-                                      Icon(Icons.play_arrow,
-                                          size: widget.screenHeight * .08,
-                                          color: const Color(0xff61f7d5)),
-                                      RichText(
-                                        text: TextSpan(
-                                          text: 'Click here to play',
-                                          style: TextStyle(
-                                              color: Colors.white,
-                                              decoration:
-                                                  TextDecoration.underline,
-                                              fontSize: widget.text),
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                )
+                                // InkWell(
+                                //   onTap: () {
+                                //     _openURL(
+                                //         "https://github.com/ArgenisGonzalez-Ksquare/project2_conway");
+                                //   },
+                                //   child: Row(
+                                //     mainAxisAlignment: MainAxisAlignment.center,
+                                //     children: [
+                                //       Icon(Icons.remove_red_eye_outlined,
+                                //           size: widget.screenHeight * .08,
+                                //           color: const Color(0xff61f7d5)),
+                                //       RichText(
+                                //         text: TextSpan(
+                                //           text:
+                                //               'Click here to\nsee the repository',
+                                //           style: TextStyle(
+                                //               color: Colors.white,
+                                //               decoration:
+                                //                   TextDecoration.underline,
+                                //               fontSize: widget.text),
+                                //         ),
+                                //       ),
+                                //     ],
+                                //   ),
+                                // ),
+                                // InkWell(
+                                //   onTap: () {
+                                //     _openURL(
+                                //         "https://argenisgonzalez-ksquare.github.io/project2_conway/");
+                                //   },
+                                //   child: Row(
+                                //     mainAxisAlignment: MainAxisAlignment.center,
+                                //     children: [
+                                //       Icon(Icons.play_arrow,
+                                //           size: widget.screenHeight * .08,
+                                //           color: const Color(0xff61f7d5)),
+                                //       RichText(
+                                //         text: TextSpan(
+                                //           text: 'Click here to play',
+                                //           style: TextStyle(
+                                //               color: Colors.white,
+                                //               decoration:
+                                //                   TextDecoration.underline,
+                                //               fontSize: widget.text),
+                                //         ),
+                                //       ),
+                                //     ],
+                                //   ),
+                                // )
                               ],
                             ),
                           ),

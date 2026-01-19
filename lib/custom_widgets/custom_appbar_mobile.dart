@@ -96,7 +96,7 @@ class _Section1State extends State<CustomAppbarMobile> {
                                   ),
                                   widget.appbarProvider.isExpanded
                                       ? Text(
-                                          'Flutter Developer',
+                                          'Full Stack Developer',
                                           style: TextStyle(
                                               color: Colors.white,
                                               fontSize: widget.currentHeight *
@@ -322,7 +322,7 @@ class _Section1State extends State<CustomAppbarMobile> {
                                     height: widget.currentHeight,
                                     child: Center(
                                       child: Text(
-                                        'Flutter Developer',
+                                        'Full Stack Developer',
                                         style: TextStyle(
                                             color: Colors.white,
                                             fontSize:

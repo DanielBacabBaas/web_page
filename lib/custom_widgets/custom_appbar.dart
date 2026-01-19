@@ -114,7 +114,7 @@ class _Section1State extends State<CustomAppbar> {
                        width: widget.screenWidth,
                       height: widget.currentHeight,
                       child: Center(
-                        child: Text('Flutter Developer',
+                        child: Text('Full Stack Developer',
                           style: TextStyle(
                               color: Colors.white,
                               fontSize: widget.currentHeight * .03 +

@@ -59,7 +59,7 @@ class _Section1State extends State<Section1> {
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text("Hi, my name is",
+              Text("Profile",
                   style: TextStyle(
                       color: const Color(0xff61f7d5),
                       fontSize: widget.introductions)),
@@ -77,27 +77,11 @@ class _Section1State extends State<Section1> {
                     children: [
                       TextSpan(
                           text:
-                              "I am a mechatronic engineer with a focus on the software area. I'm certified as a junior Flutter developer by ",
+                              "Full-stack developer with experience in frontend (Vue, Flutter) and backend (Laravel). Experience in server administration (WHM/cPanel) and ERP development with e-commerce capabilities. Seeking full-stack roles where I can contribute to production projects and platform maintenance.",
                           style: TextStyle(
                               color: const Color(0xff8993af),
                               fontSize: widget.text)),
-                      TextSpan(
-                        text: 'ITK',
-                        style: TextStyle(
-                            color: Colors.white,
-                            decoration: TextDecoration.underline,
-                            fontSize: widget.text),
-                        recognizer: TapGestureRecognizer()
-                          ..onTap = () {
-                            _openURL("https://itk.mx/certification-course/");
-                          },
-                      ),
-                      TextSpan(
-                          text:
-                              ', I have experience in real flutter projects (like this page) as well as a bit of HTML, CSS and Javascript.',
-                          style: TextStyle(
-                              color: const Color(0xff8993af),
-                              fontSize: widget.text)),
+                     
                     ],
                   ),
                 ),

@@ -338,7 +338,102 @@ class _Section1State extends State<Section2> {
                 ),
                 index: 3,
                 section: 0,
-                expandableProvider: widget.expandableProvider)
+                expandableProvider: widget.expandableProvider),
+
+
+                //ISI Sureste
+            InfoCard(
+              title:
+                  "Fullstack Developer | Webmaster | at ISI Sureste | June 2024 - Present",
+              classification: "Full-time employment",
+              classificationColor: const Color.fromARGB(255, 85, 0, 255),
+              section: 0,
+              index: 4,
+              expandableProvider: widget.expandableProvider,
+              childWidget: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  RichText(
+                    text: const TextSpan(
+                      children: [
+                        WidgetSpan(
+                          child: Icon(
+                            Icons.circle,
+                            size: 10,
+                            color: Colors.white,
+                          ),
+                          alignment: PlaceholderAlignment.middle,
+                        ),
+                        TextSpan(
+                          text: ' Frontend (Vue) and backend (Laravel) development\n',
+                          style: TextStyle(fontSize: 16, color: Colors.white),
+                        ),
+                        WidgetSpan(
+                          child: Icon(
+                            Icons.circle,
+                            size: 10,
+                            color: Colors.white,
+                          ),
+                          alignment: PlaceholderAlignment.middle,
+                        ),
+                        TextSpan(
+                          text:
+                              ' Server administration (WHM, cPanel, InMotion)\n',
+                          style: TextStyle(fontSize: 16, color: Colors.white),
+                        ),
+                        WidgetSpan(
+                          child: Icon(
+                            Icons.circle,
+                            size: 10,
+                            color: Colors.white,
+                          ),
+                          alignment: PlaceholderAlignment.middle,
+                        ),
+                        TextSpan(
+                          text: ' Maintenance, improvement, and creation of projects for companies\n',
+                          style: TextStyle(fontSize: 16, color: Colors.white),
+                        ),
+                        WidgetSpan(
+                          child: Icon(
+                            Icons.circle,
+                            size: 10,
+                            color: Colors.white,
+                          ),
+                          alignment: PlaceholderAlignment.middle,
+                        ),
+                        TextSpan(
+                          text: ' Development and maintenance of ERP systems with e-commerce capabilities\n',
+                          style: TextStyle(fontSize: 16, color: Colors.white),
+                        ),
+                        WidgetSpan(
+                          child: Icon(
+                            Icons.circle,
+                            size: 10,
+                            color: Colors.white,
+                          ),
+                          alignment: PlaceholderAlignment.middle,
+                        ),
+                        TextSpan(
+                          text: ' Databases (MySQL)',
+                          style: TextStyle(fontSize: 16, color: Colors.white),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Center(
+                    child: Image.network(
+                      "https://i.imgur.com/gQubUJi.jpeg",
+                     height: isMobileVertical?(widget.screenHeight * .18):(widget.screenHeight * .8), 
+                      // width: widget.screenWidth * .65,
+                      fit: BoxFit.contain,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+
+
+
           ]),
         ),
       ),
